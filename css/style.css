@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --blanco : #ffffff;
+    --negro : #000000;
+    --oscuro : #242424;
+}
+/* Header */
+header nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    z-index: 99;
+}
+header nav .marca{
+    margin-left: 15px;
+}
+header nav .menu a{
+    color: var(--blanco);
+    padding-right: 12px;
+    text-decoration: none;
+}
+/* Galería */
+#contenedor-galeria{
+    color: var(--blanco);
+    padding: 90px 0;
+    background-color: var(--negro);
+    text-align: center;
+    min-height: 500px;
+}
+#contenedor-galeria h2{
+    font-size: 5vw;
+    padding: 20px 0 40px 0;
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#galeria div{
+    padding: 15px;
+}
+#galeria img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    transition: .5s;
+}
+#galeria img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--blanco);
+}
+/* Video */
+#contenedor-video{
+    color: var(--blanco);
+    background-color: var(--oscuro);
+    text-align: center;
+    min-height: 400px;
+    padding-bottom: 50px;
+}
+#contenedor-video h2{
+    font-size: 5vw;
+    padding: 25px 0 40px 0;
+}
+#contenedor-video img{
+    width: 50%;
+    border-radius: 15px;
+    transition: .5s;
+}
+#contenedor-video img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--blanco);
+}
+/* Mapa */
+#contenedor-mapa{
+    color: var(--blanco);
+    background-color: var(--negro);
+    text-align: center;
+    min-height: 400px;
+    padding-bottom: 50px;
+}
+#contenedor-mapa img{
+    width: 50%;
+    border-radius: 15px;
+    transition: .5s;
+}
+#contenedor-mapa h2{
+    font-size: 5vw;
+    padding: 25px 0 40px 0;
+}
+#contenedor-mapa img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--blanco);
+}
+/* Footer */
+footer{
+    background-color: var(--oscuro);
+    height: 100px;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    padding: 15px;
+    font-size: 2vw;
+}
+/* Responsividad */
+@media (max-width: 700px) {
+    #contenedor-galeria h2{
+        font-size: 7vw;
+    }
+    #contenedor-video h2{
+        font-size: 7vw;
+    }
+    #contenedor-mapa h2{
+        font-size: 7vw;
+    }
+    #contenedor-video img{
+        width: 80%;
+    }
+    #contenedor-mapa img{
+        width: 80%;
+    }
+}
+@media (max-width: 1100px) {
+    footer p{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 500px) {
+    footer p{
+        font-size: 4vw;
+    }
+}

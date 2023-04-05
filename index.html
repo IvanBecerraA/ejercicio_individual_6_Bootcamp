@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="marca">
+                <h1>Test Fancybox 5</h1>
+            </div>
+            <div class="menu">
+                <a href="#contenedor-galeria">Galería</a>
+                <a href="#contenedor-video">Video</a>
+                <a href="#contenedor-mapa">Mapa</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section id="contenedor-galeria">
+            <h2>Galería de imagenes de Chile</h2>
+            <div id="galeria">
+                <div>
+                    <a href="img/santiago.jpg" data-fancybox="galería" data-caption="Santiago">
+                        <img src="img/santiago.jpg" title="Santiago" alt="imagen de la ciudad de Santiago">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/valparaiso.jpg" data-fancybox="galería" data-caption="Valparaíso">
+                        <img src="img/valparaiso.jpg" title="Valparaíso" alt="imagen de la ciudad de Valparaíso">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/isla_de_pascua.jpg" data-fancybox="galería" data-caption="Isla de Pascua">
+                        <img src="img/isla_de_pascua.jpg" title="Isla de Pascua" alt="imagen de la Isla de Pascua">
+                    </a>
+                </div>
+                <div>
+                    <a href="img/torres_del_paine.jpg" data-fancybox="galería" data-caption="Torres del Paine">
+                        <img src="img/torres_del_paine.jpg" title="Torres del Paine" alt="Torres del Paine">
+                    </a>
+                </div>  
+            </div>
+        </section>
+        
+
+        <section id="contenedor-video">
+            <h2>Video de Chile</h2>
+            <div id="video">
+                <a href="https://www.youtube.com/watch?v=j3UnDHJ78O4" data-fancybox data-width="1280" data-height="1024">
+                    <img src="img/video.png" title="video de chile" alt="video de chile">
+                </a>         
+            </div>
+        </section>
+
+        <section id="contenedor-mapa">
+            <h2>Mapa de Chile</h2>
+            <div id="mapa">
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26809045.702180706!2d-109.51333784207414!3d-34.89167601126713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses!2scl!4v1680649643346!5m2!1ses!2scl"
+                    data-fancybox data-type="iframe" data-preload="false" data-width="1280" data-height="800">
+                    <img src="img/mapa.png" alt="mapa de chile">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Iván Becerra</p>
+        </div>
+        <div>
+            <p>Bootcamp Full Stack Java 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
